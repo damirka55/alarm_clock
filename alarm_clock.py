@@ -1,10 +1,10 @@
 import pyglet
 import time
 
-def play_song(signal_name):
+def play_song():
     ''' Plays signal. '''
     
-    song = pyglet.resource.media(signal_name)
+    song = pyglet.resource.media('alert.wav')
     song.play()
 
     pyglet.app.run()
@@ -15,7 +15,7 @@ def take_sleep_time():
     print("How many time you want sleep?")
     
     hours = int(input("How many hours you want sleep?"))
-    minutes = int(input("How many minutes you want sleep?"))
+    minutes = float(input("How many minutes you want sleep?"))
     
     sleep_time = (hours * 60 + minutes) * 60
     
@@ -28,3 +28,4 @@ def make_alert(sleep_time):
     
     play_song()
     
+make_alert(take_sleep_time())
