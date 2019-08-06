@@ -14,8 +14,8 @@ def take_sleep_time():
     
     print("How many time you want sleep?")
     
-    hours = input("How many hours you want sleep?")
-    minutes = input("How many minutes you want sleep?")
+    hours = int(input("How many hours you want sleep?"))
+    minutes = int(input("How many minutes you want sleep?"))
     
     sleep_time = (hours * 60 + minutes) * 60
     
