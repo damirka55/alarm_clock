@@ -21,3 +21,10 @@ def take_sleep_time():
     
     return sleep_time 
     
+def make_alert(sleep_time):
+    ''' Launch program. '''
+    
+    time.sleep(sleep_time)
+    
+    play_song()
+    
